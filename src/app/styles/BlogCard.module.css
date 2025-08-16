@@ -1,0 +1,139 @@
+.card {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 12px;
+  flex: 1;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.iconTitle {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.iconTitle i {
+  font-size: 20px;
+  color: #aaa;
+}
+
+.iconTitle h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.iconTitle p {
+  margin: 0;
+  font-size: 13px;
+  color: #888;
+}
+
+/* Post Card */
+.post {
+  display: flex;
+  gap: 12px;
+  background: #1a1a1a;
+  border-radius: 10px;
+  padding: 12px;
+  transition: background 0.2s ease;
+  border: 1px solid #333;
+}
+
+.post:hover {
+  background: #222;
+  cursor: pointer;
+}
+
+.postIcon {
+  width: 40%;
+  height: 55px;
+  background: #333;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #bbb;
+}
+
+.details h4 {
+  font-size: 15px;
+  margin: 0 0 4px;
+  font-weight: 600;
+}
+
+.details p {
+  font-size: 13px;
+  margin: 0 0 6px;
+  color: #aaa;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tag {
+  background: #333;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.extra {
+  display: flex;
+  gap: 10px;
+  font-size: 12px;
+  color: #777;
+}
+
+.extra i {
+  margin-right: 4px;
+}
+
+/* Footer Button */
+.footer {
+  margin-top: 14px;
+  text-align: center;
+}
+
+.button {
+  background: transparent;
+  border: 1px solid #333;
+  padding: 8px 14px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.2s ease, border 0.2s ease;
+  width: 100%;
+  letter-spacing: 1px;
+}
+
+.button:hover {
+  background: #222;
+  border-color: #444;
+}
+
+.button i {
+  margin-left: 6px;
+}
+.icon {
+    border: 1px #333 solid;
+    width: 40px;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+}

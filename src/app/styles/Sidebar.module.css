@@ -1,0 +1,44 @@
+.sidebar {
+  background-color: #111;
+  border-radius: 10px;
+  width: 250px;
+  /* height: fit-content; */
+  border: 1px solid #333;
+}
+.sidebarBox {
+    background-color: #111;
+    border-radius: 10px;
+    width: 99.3%;
+    height: fit-content;
+    padding: 20px;
+    border: 1px #333 solid;
+    margin: 0.5%;
+    height: 99.3%;
+}
+.section {
+  margin-top: 20px;
+  display: flow-root;
+}
+
+.section h4 {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.section span {
+  display: inline-block;
+  background: #222;
+  padding: 5px 10px;
+  border-radius: 5px;
+  /* margin: 1px; */
+  font-size: 12px;
+   border: 1px solid #444;
+}
+.section .skill {
+  border: 1px solid #444;
+  float: left;
+  margin: 3px;
+  border-radius: 4px;
+  padding: 2px;
+}

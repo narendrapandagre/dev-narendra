@@ -1,0 +1,64 @@
+.card {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+  border: 1px #373737 solid;
+}
+.card .one {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.avatar {
+  border-radius: 50%;
+  margin-bottom: 10px;
+  width: 100px;
+}
+.profile {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.card h2 {
+  margin-bottom: 5px;
+}
+
+.card p {
+  margin: 5px 0;
+  color: #aaa;
+}
+
+.links a {
+  color: #4da3ff;
+}
+.ptext {
+  color: #ffffff !important;
+  font-size: 18px;
+  font-weight: 900;
+}
+.ptext span {
+  color: #4da3ff;
+}
+.taglineContainer {
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    background-color: black;
+    padding: 2px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(174 174 174 / 10%);
+    margin-top: 10px;
+}
+.status span {
+  background-color: #1ed406;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    float: left;
+    margin: 5px;
+}
