@@ -8,7 +8,7 @@ export default function ProfileCard() {
         <div className={styles.profile}>
           <div>
             <img
-              src="/avatar.jpg"
+              src="/avatar.png"
               alt="Profile"
               className={styles.avatar}
             />
@@ -21,7 +21,7 @@ export default function ProfileCard() {
         </div>
         <div className={styles.links}>
           <div>
-            <a href="#">Resume</a> | <a href="#">About Me</a>
+            <a href="/resume">Resume</a> | <a href="#">About Me</a>
           </div>
         </div>
       </div>
