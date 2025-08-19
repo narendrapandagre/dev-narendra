@@ -1,7 +1,7 @@
 // src/app/resume/page.tsx
 import styles from './Resume.module.css';
 import Link from 'next/link';
-import { Calendar, Mail, Phone, MapPin, Star, Briefcase, Wrench, Book, Award } from "lucide-react";
+import { CircleCheck, Building, Calendar, Mail, Phone, MapPin, Star, Briefcase, Wrench, Book, Award } from "lucide-react";
 
 export default function Resume() {
   return (
@@ -13,7 +13,9 @@ export default function Resume() {
             <span>📄 Version 2024.1</span> <span>📅 Updated Jun 2025</span>
           </div>
           <div className={styles.meta}>
-            <button className={styles.download}>⬇ Download PDF</button>
+          <a href="/narendrapandagre.pdf" download className={styles.download}>
+            ⬇ Download PDF
+          </a>
           </div>
       </div>
       <div className={styles.content}>
@@ -35,9 +37,11 @@ export default function Resume() {
         <section className={styles.card}>
           <h2><Star size={16}/> Professional Summary</h2>
           <p>
-            Frontend Developer with 10+ years of expertise in building enterprise-grade applications. 
-            Proven track record in microservices architecture, low-code/no-code platforms. 
-            Recently architected a microservices-based Lead Management System...
+            Experienced UI Developer and Web Designer with 10+ years of expertise in creating
+            visually stunning, functional, and user-friendly websites. Skilled in front-end
+            development, responsive design, and UI/UX best practices. Passionate about
+            delivering high-quality digital experiences that leave a lasting impact on users
+            and clients.
           </p>
         </section>
 
@@ -45,26 +49,208 @@ export default function Resume() {
         <section className={styles.card}>
           <h2><Briefcase size={16}/> Professional Experience</h2>
           <div className={styles.job}>
-            <h3>Software Engineer 2</h3>
-            <p><strong>Axeno Consulting Pvt. Ltd.</strong> | Apr 2022 – Present</p>
+            <div className={styles.jobHeader}>
+              <div>
+                <h3>Front-End Developer & UI Developer</h3>
+                <p><strong><Building size={16}/> Engineer Philosophy Web Services Pvt. Ltd. | Indore, India</strong></p>
+              </div>
+              <div>
+                <span><Calendar size={16}/> March 2017 – Present</span>
+              </div>
+            </div>
+            
             <ul>
-              <li>Designed and developed a microservices-based Lead Management System...</li>
-              <li>Engineered BPM system with custom workflows...</li>
-              <li>Built drag-and-drop Form Builder with React & Node.js...</li>
+              <li>
+                <div className={styles.jobText}>
+                  <div>
+                    <CircleCheck style={{ stroke: "green", fill: "none" }} width={16} height={16} />
+                  </div>
+                  <div>
+                    <span>Developed responsive and interactive user interfaces for Xpower, a sales force effectiveness platform for the life sciences industry, using Angular 14, HTML, CSS and JavaSript</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className={styles.jobText}>
+                  <div>
+                    <CircleCheck style={{ stroke: "green", fill: "none" }} width={16} height={16} />
+                  </div>
+                  <div>
+                    <span>Territory Management (Feb 2023 - Present): Built geospatial dashboards with
+                    Mapbox and data tables with ag Grid, improving territory optimization and
+                    analysis.</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className={styles.jobText}>
+                  <div>
+                    <CircleCheck style={{ stroke: "green", fill: "none" }} width={16} height={16} />
+                  </div>
+                  <div>
+                    <span> Customer Targeting (June 2020 - Present): Designed data-driven UI
+                      components using Plotly Charts and UI Grid, enhancing customer
+                      segmentation strategies.</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className={styles.jobText}>
+                  <div>
+                    <CircleCheck style={{ stroke: "green", fill: "none" }} width={16} height={16} />
+                  </div>
+                  <div>
+                    <span>Sales Target Setting (STS) (June 2020 - Feb 2023): Created intuitive interfaces
+                    with Angular JS and JavaScript, streamlining sales target allocation.</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className={styles.jobText}>
+                  <div>
+                    <CircleCheck style={{ stroke: "green", fill: "none" }} width={16} height={16} />
+                  </div>
+                  <div>
+                    <span> Sales Incentive Planning (SIP) (Feb 2023 - Aug 2024): Developed incentive
+                      planning features with Node.js and Bootstrap 4.6, boosting sales motivation/</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className={styles.jobText}>
+                  <div>
+                    <CircleCheck style={{ stroke: "green", fill: "none" }} width={16} height={16} />
+                  </div>
+                  <div>
+                    <span> Managed code versioning with Git (GitHub) and tracked project progress using
+Jira in an Agile environment.</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className={styles.jobText}>
+                  <div>
+                    <CircleCheck style={{ stroke: "green", fill: "none" }} width={16} height={16} />
+                  </div>
+                  <div>
+                    <span> Integrated frontend with backend APIs using Node.js, ensuring seamless
+functionality/</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className={styles.jobText}>
+                  <div>
+                    <CircleCheck style={{ stroke: "green", fill: "none" }} width={16} height={16} />
+                  </div>
+                  <div>
+                    <span>Achievements: Improved user experience through optimized UI designs and
+delivered projects on time.</span>
+                  </div>
+                </div>
+              </li>
             </ul>
+            <p>Technologies Used:</p>
             <div className={styles.tags}>
-              <span>React</span><span>Next.js</span><span>TypeScript</span><span>Node.js</span><span>MongoDB</span>
+              <span>Angular</span> <span>React</span> <span>Next.js</span> <span>JavaScript</span>
+              <span>AngularJS</span><span>TypeScript</span><span>Boostrap</span>
+              <span>Mapbox</span><span>HMTL5</span>
+              <span>CSS3</span><span>PhotoShop</span><span>GIT</span><span>Jira</span>
             </div>
           </div>
+
+
           <div className={styles.job}>
-            <h3>Software Engineer Intern</h3>
-            <p><strong>8 Work India</strong> | Apr 2021 – Dec 2021</p>
+            <div className={styles.jobHeader}>
+              <div>
+                <h3>Web Designer and Graphic Designer</h3>
+                <p><strong><Building size={16}/> SSV Technologis Web Services Pvt. Ltd. | Indore, India</strong></p>
+              </div>
+              <div>
+                <span><Calendar size={16}/> Dec 2014 – March 2017</span>
+              </div>
+            </div>
             <ul>
-              <li>Built real-time Notification System...</li>
-              <li>Implemented Upsell Plan Recommendation module...</li>
+              <li>
+                <div className={styles.jobText}>
+                  <div>
+                    <CircleCheck style={{ stroke: "green", fill: "none" }} width={16} height={16} />
+                  </div>
+                  <div>
+                    <span>Designed clean, modern website layouts using Adobe Photoshop (PSD).</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className={styles.jobText}>
+                  <div>
+                    <CircleCheck style={{ stroke: "green", fill: "none" }} width={16} height={16} />
+                  </div>
+                  <div>
+                    <span> Converted PSD designs into fully responsive HTML pages using HTML5, CSS3,
+and Bootstrap.</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className={styles.jobText}>
+                  <div>
+                    <CircleCheck style={{ stroke: "green", fill: "none" }} width={16} height={16} />
+                  </div>
+                  <div>
+                    <span>Designed responsive websites using HTML, CSS, Bootstrap for 25+ clients.</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className={styles.jobText}>
+                  <div>
+                    <CircleCheck style={{ stroke: "green", fill: "none" }} width={16} height={16} />
+                  </div>
+                  <div>
+                    <span>Ensured cross-browser compatibility and mobile responsiveness
+during development.</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className={styles.jobText}>
+                  <div>
+                    <CircleCheck style={{ stroke: "green", fill: "none" }} width={16} height={16} />
+                  </div>
+                  <div>
+                    <span>Collaborated with developers and project managers to meet client
+design requirements and deadlines.</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className={styles.jobText}>
+                  <div>
+                    <CircleCheck style={{ stroke: "green", fill: "none" }} width={16} height={16} />
+                  </div>
+                  <div>
+                    <span>Followed best practices for semantic HTML and organized CSS
+structure.</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className={styles.jobText}>
+                  <div>
+                    <CircleCheck style={{ stroke: "green", fill: "none" }} width={16} height={16} />
+                  </div>
+                  <div>
+                    <span>Worked on multiple client projects, delivering pixel-perfect frontend
+implementations.</span>
+                  </div>
+                </div>
+              </li>
             </ul>
+            <p>Technologies Used:</p>
             <div className={styles.tags}>
-              <span>React</span><span>JavaScript</span><span>REST APIs</span>
+              <span>Adobe Photoshop (PSD)</span><span>HTML5</span><span>CSS3</span>
+              <span>Bootstrap</span><span>Corel Draw</span><span>WordPress</span>
             </div>
           </div>
         </section>
