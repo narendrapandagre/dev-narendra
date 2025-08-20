@@ -46,3 +46,53 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   background: #666;    
 }
+
+.container {
+  display: grid;
+  grid-template-columns: 250px 1fr; /* Sidebar + Content */
+  grid-template-areas:
+    "sidebar profile"
+    "sidebar projects"
+    "sidebar blog"
+    "sidebar connect";
+  gap: 20px;
+}
+
+/* Assign each item */
+.sidebar { grid-area: sidebar; 
+    background-color: #111;
+    border-radius: 10px;
+    width: 250px;
+    /* height: fit-content; */
+    border: 1px solid #333;}
+.profile { grid-area: profile; }
+.projects { grid-area: projects; }
+.blog { grid-area: blog; }
+.connect { grid-area: connect; }
+
+/* ✅ Desktop: Projects & Blog side by side */
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: 250px 1fr 1fr; /* Sidebar + Projects + Blog */
+    grid-template-areas:
+      "sidebar profile profile"
+      "sidebar projects blog"
+      "sidebar connect connect";
+  }
+}
+
+/* ✅ Mobile: Stack in order (Profile → Sidebar → Projects → Blog → Connect) */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "profile"
+      "sidebar"
+      "projects"
+      "blog"
+      "connect";
+  }
+  .sidebar {
+    width: 100%; /* Full width on mobile */
+  }
+}
