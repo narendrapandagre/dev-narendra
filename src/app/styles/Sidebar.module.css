@@ -1,9 +1,10 @@
 .sidebar {
-  background-color: #111;
+  /* background-color: #111;
   border-radius: 10px;
   width: 250px;
   /* height: fit-content; */
-  border: 1px solid #333;
+  /* border: 1px solid #333; */ 
+  height: 100%;
 }
 .sidebarBox {
     background-color: #111;
@@ -41,4 +42,14 @@
   margin: 3px;
   border-radius: 4px;
   padding: 2px;
+}
+@media (min-width: 1024px) {
+  .sidebar {
+    width: 100% !important;
+  }
+}
+@media (min-width: 768px) {
+  .sidebar {
+    width: 100% !important;
+  }
 }

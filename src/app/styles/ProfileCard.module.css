@@ -62,3 +62,25 @@
     float: left;
     margin: 5px;
 }
+@media (max-width: 768px) {
+  .card {
+    padding: 10px;
+  }
+  .avatar {
+    width: 80px;
+  }
+  .ptext {
+    font-size: 16px;
+  }
+  .card .one {
+    flex-direction: column;
+    align-items: start;
+  }
+  .taglineContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .taglineContainer .tagline {
+    text-align: center;
+  }
+}

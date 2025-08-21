@@ -7,16 +7,12 @@ import ConnectCard from './components/ConnectCard';
 
 export default function HomePage() {
   return (
-    <div className='container'>
-      <Sidebar />
-      <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '20px' }}>
-        <ProfileCard />
-        <div style={{ display: 'flex', gap: '20px' }}>
-          <ProjectsCard />
-          <BlogCard />
-        </div>
-        <ConnectCard />
-      </div>
+    <div className="container">
+      <ProfileCard className="profile" />
+      <Sidebar className="sidebar" />
+      <ProjectsCard className="projects" />
+      <BlogCard className="blog" />
+      <ConnectCard className="connect" />
     </div>
   );
 }

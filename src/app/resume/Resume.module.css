@@ -1,5 +1,5 @@
 .container {
-  max-width: 70%;
+  max-width: 80%;
   margin: 0 auto;
   padding: 2rem;
   color: #fff;
@@ -10,7 +10,7 @@
   margin-bottom: 2rem;
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;     /* instead of end */
 }
 .content {
   background-color: #444;
@@ -75,7 +75,7 @@
   cursor: pointer;
 }
 
-.card {
+.card, .education {
   background: #000000;
   padding: 1.5rem;
   border-radius: 12px;
@@ -83,7 +83,7 @@
   box-shadow: 0 2px 6px rgba(0,0,0,0.5);
 }
 
-.card h2 {
+.card h2 , .education h2 {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -163,10 +163,58 @@
 .project {
   margin-bottom: 1.2rem;
 }
+.project ul {
+  margin: 0.5rem 0;
+  padding-left: 0.5rem;
+  list-style-type: disc;
+}
+.project ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+  color: #939393;
+  list-style:none;
+}
+.project ul li svg{
+  margin-right: 5px;
+}
+.educationBox {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.education .jobHeader {
+  border: 1px #222 solid;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  flex: 1;
+}
+.education .jobHeader div:first-child {
+  flex: 6;  /* 70% */
+}
 
+.education .jobHeader div:last-child {
+  flex: 4;  /* 30% */
+}
+.certified {
+  border: 1px #222 solid;
+  padding: 20px;
+  border-radius: 5px;
+}
+.certified .jobText {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px;
+  margin: 0.5rem 0;
+}
 .footer {
   text-align: center;
   margin-top: 2rem;
   font-size: 0.8rem;
-  color: #aaa;
+  background-color: #000;
+  padding: 5px;
+  border-radius: 5px;
+}
+.footer p {
+  color: #5c5c5c;
 }

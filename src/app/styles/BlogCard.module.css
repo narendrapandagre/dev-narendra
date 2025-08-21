@@ -5,6 +5,8 @@
   flex: 1;
   color: #fff;
   border: 1px solid #333;
+  max-height: 300px;
+  overflow: auto;
 }
 
 /* Header */
