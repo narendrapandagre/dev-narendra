@@ -141,8 +141,6 @@ export default function Resume() {
               <span>CSS3</span><span>PhotoShop</span><span>GIT</span><span>Jira</span>
             </div>
           </div>
-
-
           <div className={styles.job}>
             <div className={styles.jobHeader}>
               <div>
@@ -171,7 +169,7 @@ export default function Resume() {
                   </div>
                   <div>
                     <span> Converted PSD designs into fully responsive HTML pages using HTML5, CSS3,
-and Bootstrap.</span>
+                      and Bootstrap.</span>
                   </div>
                 </div>
               </li>
@@ -192,7 +190,7 @@ and Bootstrap.</span>
                   </div>
                   <div>
                     <span>Ensured cross-browser compatibility and mobile responsiveness
-during development.</span>
+                      during development.</span>
                   </div>
                 </div>
               </li>
@@ -203,7 +201,7 @@ during development.</span>
                   </div>
                   <div>
                     <span>Collaborated with developers and project managers to meet client
-design requirements and deadlines.</span>
+                      design requirements and deadlines.</span>
                   </div>
                 </div>
               </li>
@@ -214,7 +212,7 @@ design requirements and deadlines.</span>
                   </div>
                   <div>
                     <span>Followed best practices for semantic HTML and organized CSS
-structure.</span>
+                      structure.</span>
                   </div>
                 </div>
               </li>
@@ -225,7 +223,7 @@ structure.</span>
                   </div>
                   <div>
                     <span>Worked on multiple client projects, delivering pixel-perfect frontend
-implementations.</span>
+                      implementations.</span>
                   </div>
                 </div>
               </li>
@@ -235,8 +233,8 @@ implementations.</span>
               <span>Adobe Photoshop (PSD)</span><span>HTML5</span><span>CSS3</span>
               <span>Bootstrap</span><span>Corel Draw</span><span>WordPress</span>
             </div>
-        </section>
           </div>
+        </section>
 
         {/* Skills */}
         <section className={styles.card}>
