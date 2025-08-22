@@ -141,8 +141,6 @@ export default function Resume() {
               <span>CSS3</span><span>PhotoShop</span><span>GIT</span><span>Jira</span>
             </div>
           </div>
-
-
           <div className={styles.job}>
             <div className={styles.jobHeader}>
               <div>
