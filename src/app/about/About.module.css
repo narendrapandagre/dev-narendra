@@ -1,0 +1,406 @@
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+  color: #fff;
+}
+.back {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #aaa;
+  text-decoration: none;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+.text h1 {
+  font-size: 3rem !important;
+  margin-bottom: 1rem;
+}
+.text p {
+      font-size: 1.1rem;
+    margin-bottom: 1rem;
+    line-height: 30px;
+}
+.profileImg {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+.subtitle strong {
+  color: #FFFFFF;
+}
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.primaryBtn {
+  background: #2563eb;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.secondaryBtn {
+  background: transparent;
+  border: 1px solid #2563eb;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  color: #2563eb;
+  cursor: pointer;
+}
+
+.section {
+  margin-top: 5rem;
+}
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #facc15;
+  text-align: center;
+}
+.section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem !important;
+  text-align: left !important;
+}
+.section .tagline {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+  line-height: 30px;
+  text-align: center;
+}
+.section .card p {
+  text-align: left;
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 0rem;
+  line-height: 30px;
+}
+.section ul {
+  padding: 0;
+  margin: 0;
+  margin-left: 20px;
+  line-height: 30px;
+}
+.section ui li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: #ccc;
+}
+.section .card {
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px #222 solid;
+    background: transparent !important;
+}
+.icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1rem;
+  color: #facc15;
+}
+.cards {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  background: #111;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+.journey {
+  display: flex;
+  flex-direction: column;
+  width: 56rem;
+  margin: auto;
+}
+.journey h2 {
+  font-size: 2rem;
+  margin: 1rem;
+  margin-top: 3rem;
+  color: #facc15;
+  text-align: center;
+}
+.journey .tagline {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+  line-height: 30px;
+  text-align: center;
+}
+.journey .card {
+  background: transparent !important;
+  border: 1px #222 solid;
+}
+.journeycards {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.journey .jobHeader {
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  display: flex;
+  flex: 1;
+}
+.journey .jobHeader div:first-child {
+  flex: 8;  /* 70% */
+}
+
+.journey .jobHeader div:last-child {
+  flex: 4;  /* 30% */
+}
+.journey .jobHeader p {
+   margin: 0.5rem 0;
+  font-size: 0.9rem;
+  color: #939393;
+}
+.jobText {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px;
+}
+.jobText span {
+  font-weight: 600;
+  color: #939393;
+}
+.journey ul {
+  margin: 0.5rem 0;
+  padding-left: 0.5rem;
+  list-style-type: disc;
+}
+.journey ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+  color: #939393;
+  list-style:none;
+}
+.journey ul li svg{
+  margin-right: 5px;
+}
+.journey .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.journey .tags span {
+  background: #2c2c2c;
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  color: #ddd;
+}
+.date {
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.tag {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 20px;
+  padding: 1rem;
+  margin: 10px;
+
+  /* Transparent gradient background */
+  background: linear-gradient(135deg, rgb(65 67 71 / 25%), rgba(29, 78, 216, 0.15));
+
+  /* Glass effect */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tag:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(37, 99, 235, 0.4);
+}
+
+.tag span {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.tag p {
+  font-size: 0.85rem;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+
+
+
+.tags .tag {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+.cta {
+  text-align: center;
+    margin-top: 5rem;
+    border: 1px #333 solid;
+    padding: 2rem 5rem;
+    border-radius: 0.5rem;
+}
+.cta p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin: 1.5rem;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.box{
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 50%; */
+  transform: translate(0%, 0%);
+  width: 300px;
+  height: 300px;
+  background: #111845a6;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgb(23, 32, 90);
+  border: 2px solid #2a3cad;
+  color: white;
+  padding: 20px;
+}
+
+.box:before{
+  content: '';
+  position:absolute;
+  /* top:0; */
+  left:-100%;
+  width:100%;
+  height:100%;
+  background: rgba(255,255,255,0.1);
+  transition:0.5s;
+  pointer-events: none;
+}
+
+.box:hover:before{
+  left:-50%;
+  transform: skewX(-5deg);
+}
+
+
+.box .content{
+  position:absolute;
+  top:15px;
+  left:15px;
+  right:15px;
+  bottom:15px;
+  border:1px solid #f0a591;
+  padding:7px;
+  text-align:center;
+  box-shadow: 0 5px 10px rgba(9,0,0,0.5);
+  
+}
+
+.box span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+  
+}
+
+.box span:nth-child(1)
+{
+  transform:rotate(0deg);
+}
+
+.box span:nth-child(2)
+{
+  transform:rotate(90deg);
+}
+
+.box span:nth-child(3)
+{
+  transform:rotate(180deg);
+}
+
+.box span:nth-child(4)
+{
+  transform:rotate(270deg);
+}
+
+.box span:before
+{
+  content: '';
+  position: absolute;
+  width:100%;
+  height: 2px;
+  background: #50dfdb;
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+  transform:scaleX(0);
+  transform-origin: left;
+  }
+  50%
+  {
+    transform:scaleX(1);
+  transform-origin: left;
+  }
+  50.1%
+  {
+    transform:scaleX(1);
+  transform-origin: right;
+    
+  }
+  
+  100%
+  {
+    transform:scaleX(0);
+  transform-origin: right;
+    
+  }
+}

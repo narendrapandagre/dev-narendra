@@ -4,6 +4,7 @@ import ProfileCard from './components/ProfileCard';
 import ProjectsCard from './components/ProjectsCard';
 import BlogCard from './components/BlogCard';
 import ConnectCard from './components/ConnectCard';
+import ForceGraph from './components/ForceGraph';
 
 export default function HomePage() {
   return (
@@ -13,6 +14,7 @@ export default function HomePage() {
       <ProjectsCard className="projects" />
       <BlogCard className="blog" />
       <ConnectCard className="connect" />
+      <ForceGraph />
     </div>
   );
 }
