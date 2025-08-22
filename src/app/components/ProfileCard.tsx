@@ -24,7 +24,7 @@ export default function ProfileCard({ className }: ProfileCardProps) {
           </div>
           <div className={styles.links}>
             <div>
-              <a href="/resume">Resume</a> | <a href="#">About Me</a>
+              <a href="/resume">Resume</a> | <a href="/about">About Me</a>
             </div>
           </div>
         </div>

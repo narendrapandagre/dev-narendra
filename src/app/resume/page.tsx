@@ -235,8 +235,8 @@ implementations.</span>
               <span>Adobe Photoshop (PSD)</span><span>HTML5</span><span>CSS3</span>
               <span>Bootstrap</span><span>Corel Draw</span><span>WordPress</span>
             </div>
-          </div>
         </section>
+          </div>
 
         {/* Skills */}
         <section className={styles.card}>
