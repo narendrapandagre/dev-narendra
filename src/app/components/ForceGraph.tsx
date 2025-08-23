@@ -26,7 +26,7 @@ const graphData: GraphData = {
 export default function ForceGraphOverlay() {
   const [open, setOpen] = useState(false);
   const [hoverNode, setHoverNode] = useState<NodeObject | null>(null);
-  const fgRef = useRef<any>();
+  const fgRef = useRef<any>(null);
   const router = useRouter();
 
   useEffect(() => {
