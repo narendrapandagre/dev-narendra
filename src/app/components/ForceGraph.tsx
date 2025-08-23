@@ -1,8 +1,14 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
-import ForceGraph2D, { GraphData, NodeObject, LinkObject } from "react-force-graph-2d";
+import { GraphData, NodeObject, LinkObject } from "react-force-graph-2d";
 import { useRouter } from "next/navigation";
+import dynamic from "next/dynamic";
+
+// ✅ Dynamic import
+const ForceGraph2D = dynamic(() => import("react-force-graph-2d"), {
+  ssr: false,
+});
 
 // ✅ Graph Data
 const graphData: GraphData = {
