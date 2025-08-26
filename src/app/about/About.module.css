@@ -10,7 +10,15 @@
   color: #aaa;
   text-decoration: none;
 }
-
+.text .text1 {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    background-color: #222;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-weight: 500;
+}
 .intro {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -27,6 +35,9 @@
       font-size: 1.1rem;
     margin-bottom: 1rem;
     line-height: 30px;
+}
+.text .buttons {
+  justify-content: left;
 }
 .profileImg {
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
@@ -46,7 +57,32 @@
   gap: 1rem;
   margin-top: 1.5rem;
 }
-
+.details {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 2rem;
+ justify-content: space-between; 
+ text-align: center;
+}
+.details .detail {
+  border: 1px solid #333; 
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+}
+.details p {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin: 0;
+}
+.detail span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #6fc112;
+}
+.detail:last-child span, .detail:first-child span {
+  color: #facc15 !important;
+}
 .primaryBtn {
   background: #2563eb;
   border: none;
@@ -54,6 +90,9 @@
   border-radius: 6px;
   color: #fff;
   cursor: pointer;
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 .secondaryBtn {
@@ -63,6 +102,9 @@
   border-radius: 6px;
   color: #2563eb;
   cursor: pointer;
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 .section {
@@ -292,6 +334,12 @@
   gap: 1rem;
   margin-top: 1.5rem;
 }
+.buttons .download {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
 .box{
   /* position: absolute; */
   /* top: 50%; */
@@ -404,3 +452,66 @@
     
   }
 }
+
+
+/* mobile view */
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 1rem;
+    margin: auto;
+  }
+  .intro {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .profileImg {
+    justify-self: center;
+    width: 150px !important;
+    height: 150px !important;
+  }
+  .journey {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .buttons a {
+    width: 100%;
+    text-align: center;
+  }
+  .section .card {
+    padding: 1rem;
+  }
+  .tags {
+    gap: 1rem;
+  }
+  .cta {
+    padding: 2rem 1rem;
+  }
+  .journeycards {
+    flex-direction: column;
+  }
+  .jobHeader {
+    flex-direction: column;
+    padding: 0 !important;
+  }
+  .jobHeader h3 {
+    text-align: center !important;
+  }
+  .text h1 {
+    font-size: 2.5rem !important;
+  }
+  .profileImg {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .details {
+    flex-direction: column;
+  }
+  .box {
+    width: 290px;
+  }
+} 

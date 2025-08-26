@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./About.module.css";
 import Link from 'next/link';
-import {Target, Palette, Code, Zap, Briefcase, Settings, CircleCheck, Building, Calendar, Mail, Phone, MapPin, Star, Wrench, Book, Award } from "lucide-react";
+import {Download,Sparkles , Heart,Rocket, Target, Palette, Code, Zap, Briefcase, Settings, CircleCheck, Building, Calendar, Mail, Phone, MapPin, Star, Wrench, Book, Award } from "lucide-react";
 
 export default function About() {
   return (
@@ -12,6 +12,7 @@ export default function About() {
       </div>
       <section className={styles.intro}>
         <div className={styles.text}>
+          <span className={styles.text1}><Sparkles size={12} /> Hey there! 👋</span>
           <h1>I’m Narendra Pandagre</h1>
           <p className={styles.subtitle}>
             A passionate <strong>Full Stack Developer</strong> 
@@ -24,9 +25,24 @@ export default function About() {
             stunning, functional, and user-friendly websites. Skilled in front-end development, responsive 
             design, and UI/UX best practices. Passionate about delivering high-quality digital experiences that leave a lasting impact on users and clients....
           </p>
+
+          <div className={styles.details}>
+            <div className={styles.detail}>
+              <span>10+</span>
+              <p>Years of Experience</p>
+            </div>
+            <div className={styles.detail}>
+              <span><MapPin size={16} /></span>
+              <p>Based in Indore, India</p>
+            </div>
+            <div className={styles.detail}>
+              <span>40%</span>
+              <p> Workflow Reduction </p>
+            </div>
+          </div>
           <div className={styles.buttons}>
-            <button className={styles.primaryBtn}>Let’s Chat</button>
-            <button className={styles.secondaryBtn}>View My Work</button>
+            <a href="/contact" className={styles.primaryBtn}>Let’s Chat <Heart size={14} /></a>
+            <button className={styles.secondaryBtn}>View My Work <Rocket size={14} /></button>
           </div>
         </div>
         <div className={styles.image}>
@@ -389,8 +405,12 @@ export default function About() {
           about tech, I'd love to hear from you!
         </p>
         <div className={styles.buttons}>
-          <button className={styles.primaryBtn}>Get In Touch</button>
-          <button className={styles.secondaryBtn}>Download Resume</button>
+          <a className={styles.primaryBtn}>
+           <Mail className={styles.download} /> Get In Touch
+          </a>
+          <a href="/narendrapandagre.pdf" download className={styles.secondaryBtn}>
+           <Download className={styles.download} /> Download Resume
+          </a>
         </div>
       </section>
     </div>
