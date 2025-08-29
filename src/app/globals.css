@@ -10,6 +10,12 @@ body {
   background-color: #000;
   color: #fff;
   font-family: "Space Grotesk", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;   /* horizontally center */
+  align-items: center;       /* vertically center */
+  min-height: 100vh;         /* full viewport height */
 }
 
 a {
@@ -19,10 +25,12 @@ a {
 
 .container {
   display: flex;
-  padding: 20px;
   gap: 20px;
-  width: 100%;
   margin: 0 auto;
+  width: 90%;                /* adjust as needed */
+  max-width: 1200px;
+  padding: 40px;             /* equal space from all 4 sides */
+  box-sizing: border-box;
 }
 /* Scrollbar base */
 ::-webkit-scrollbar {
@@ -79,6 +87,10 @@ a {
       "sidebar projects blog"
       "sidebar connect connect";
   }
+  .container {
+    padding: 60px;   /* thoda zyada space */
+    max-width: 1400px;
+  }
 }
 
 /* ✅ Mobile: Stack in order (Profile → Sidebar → Projects → Blog → Connect) */
@@ -94,5 +106,24 @@ a {
   }
   .sidebar {
     width: 100%; /* Full width on mobile */
+  }
+   .container {
+    padding: 20px;   /* kam space for small screens */
+    width: 95%;
+  }
+}
+/* Small mobile (max-width: 375px) */
+@media (max-width: 375px) {
+  .container {
+    padding: 15px;
+    width: 100%;
+  }
+}
+
+/* Extra small mobile (max-width: 320px) */
+@media (max-width: 320px) {
+  .container {
+    padding: 10px;
+    width: 100%;
   }
 }

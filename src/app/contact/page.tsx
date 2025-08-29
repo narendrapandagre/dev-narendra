@@ -128,7 +128,7 @@ export default function Contact() {
         <div className={styles.card}>
           <div className={styles.collaborate}>
             <div>
-              <span><Clock size={16} color="#4cafef" /></span>
+              <span><Clock size={16} /></span>
             </div>
             <div>
               <h2>Let’s Collaborate</h2>
@@ -149,14 +149,23 @@ export default function Contact() {
         </div>
 
         <div className={styles.card}>
-          <h2>Quick Facts</h2>
-          <ul>
-            <li>⚡ Usually respond within 24-48 hours</li>
-            <li>🏆 Passionate Performer Award winner at Axeno Consulting</li>
-            <li>✅ Proven track record of 40% workflow reduction</li>
-            <li>💻 Expertise in modern tech stack (React, Node.js, TypeScript)</li>
-            <li>☕ Fueled by tea and passion for innovation</li>
-          </ul>
+          <div className={styles.collaborate}>
+            <div>
+              <span><Clock size={16}  /></span>
+            </div>
+            <div>
+              <h2>Quick Facts</h2>
+            </div>
+          </div>
+          <div className={styles.collaborateContent}>
+            <ul>
+              <li>⚡ Usually respond within 24-48 hours</li>
+              <li>🏆 Passionate Performer Award winner at Axeno Consulting</li>
+              <li>✅ Proven track record of 40% workflow reduction</li>
+              <li>💻 Expertise in modern tech stack (React, Node.js, TypeScript)</li>
+              <li>☕ Fueled by tea and passion for innovation</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
