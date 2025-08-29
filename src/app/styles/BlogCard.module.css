@@ -39,9 +39,28 @@
   font-size: 13px;
   color: #888;
 }
-
+.viewAllBtn {
+  /* background: #222; */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  width: max-content;
+  border: 1px #333 solid;
+}
+.viewAllBtn:hover {
+  background: #1a1a1a;
+  border-color: #555;
+}
 /* Post Card */
 .post {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.postItem {
   display: flex;
   gap: 12px;
   background: #1a1a1a;

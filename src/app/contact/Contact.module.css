@@ -199,14 +199,21 @@
   border-radius: 6px;
   font-weight: 500;
   font-size: 0.9rem;
+  align-items: center;
+  display: flex;
+  color: #fff;
 }
-.card ul {
+.collaborate h2 {
+  margin-bottom: 0px;
+}
+.collaborateContent ul {
   list-style: none;
   padding: 0;
 }
 
-.card ul li {
+.collaborateContent ul li {
   margin-bottom: 0.6rem;
+  color: #aaa;
 }
 
 /* -------------------- Responsive -------------------- */

@@ -4,6 +4,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { GraphData, NodeObject, LinkObject } from "react-force-graph-2d";
 import { useRouter } from "next/navigation";
 import dynamic from "next/dynamic";
+import {Send} from "lucide-react";
 
 // ✅ Dynamic import
 const ForceGraph2D = dynamic(() => import("react-force-graph-2d"), {
@@ -67,6 +68,32 @@ export default function ForceGraphOverlay() {
   }
 }, [open]);
 
+ // Add this style tag for keyframes (inside the component, before return)
+  React.useEffect(() => {
+    const style = document.createElement("style");
+    style.innerHTML = `
+      @keyframes rotate-gradient {
+        0% { background: linear-gradient(135deg, #050606ff 0%, #282b2eff 100%);}
+        25% { background: linear-gradient(225deg, #050606ff 0%, #282b2eff 100%);}
+        50% { background: linear-gradient(315deg, #050606ff 0%, #282b2eff 100%);}
+        75% { background: linear-gradient(45deg, #050606ff 0%, #282b2eff 100%);}
+        100% { background: linear-gradient(135deg, #050606ff 0%, #282b2eff 100%);}
+      }
+      .rotating-gradient-btn {
+        animation: rotate-gradient 1s linear infinite;
+        background: linear-gradient(135deg,#c9cbceff 50%, #050606ff 0%, #282b2eff 100%);
+      }
+      .rotating-gradient-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.35), 0 3px 8px rgba(0,0,0,0.22);
+    }
+    `;
+    document.head.appendChild(style);
+    return () => {
+      document.head.removeChild(style);
+    };
+  }, []);
+
   // ✅ Navigation on click
   const handleNodeClick = (node: NodeObject) => {
     const id = String(node.id).toLowerCase();
@@ -84,6 +111,7 @@ export default function ForceGraphOverlay() {
       {/* Floating Button */}
       {!open && (
         <button
+        className="rotating-gradient-btn"
           onClick={() => setOpen(true)}
           style={{
             position: "fixed",
@@ -92,13 +120,21 @@ export default function ForceGraphOverlay() {
             padding: "12px 16px",
             borderRadius: "50%",
             border: "none",
-            background: "blue",
+            background: "linear-gradient(135deg, #050606ff 0%, #303439ff 100%)", // gradient!
             color: "white",
             cursor: "pointer",
             zIndex: 1000,
+            display: "flex",
+            height: "60px",
+            width: "60px",
+            alignItems: "center",
+            justifyContent: "center",
+            // border: "1px #353434ff solid",
+            boxShadow: "0 4px 16px rgba(0,0,0,0.25), 0 1.5px 4px rgba(0,0,0,0.18)",
+            transition: "box-shadow 0.2s",
           }}
         >
-          ☰
+          <Send size={22} className="inline-block m-1" />
         </button>
       )}
 

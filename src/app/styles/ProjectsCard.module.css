@@ -14,15 +14,34 @@
   margin-bottom: 20px;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
 }
-
+.header p {
+  margin: 0;
+  font-size: 13px;
+  color: #888;
+}
 .projects {
   display: flex;
   flex-direction: column;
   gap: 12px;
   margin-bottom: 16px;
 }
-
+.viewAllBtn {
+  /* background: #222; */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  width: max-content;
+  border: 1px #333 solid;
+}
+.viewAllBtn:hover {
+  background: #1a1a1a;
+  border-color: #555;
+}
 .projectItem {
   display: flex;
   align-items: flex-start;

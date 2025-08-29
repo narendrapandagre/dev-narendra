@@ -1,9 +1,15 @@
+"use client";
 // src/components/ConnectCard.tsx
 import styles from '../styles/ConnectCard.module.css'
+import ContactModal from './ContactModal'; // ✅ ab component se import
+import { useState } from 'react';
+
 interface ConnectCardProps {
   className?: string;
 }
 export default function ConnectCard({ className }: ConnectCardProps) {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <div className={className}>
       <div className={styles.card}>
@@ -15,7 +21,7 @@ export default function ConnectCard({ className }: ConnectCardProps) {
             Hire Me
           </button>
 
-          <button className={styles.contact}>
+          <button className={styles.contact} onClick={() => setShowModal(true)}>
             <i className={`far fa-envelope ${styles.icon}`} />
             Contact
           </button>
@@ -38,6 +44,8 @@ export default function ConnectCard({ className }: ConnectCardProps) {
         </div>
         
       </div>
+      {/* ✅ Modal render */}
+      {showModal && <ContactModal onClose={() => setShowModal(false)} />}
     </div>
   )
 }
