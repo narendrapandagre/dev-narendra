@@ -129,7 +129,7 @@ export default function ForceGraphOverlay() {
             width: "60px",
             alignItems: "center",
             justifyContent: "center",
-            border: "1px #353434ff solid",
+            // border: "1px #353434ff solid",
             boxShadow: "0 4px 16px rgba(0,0,0,0.25), 0 1.5px 4px rgba(0,0,0,0.18)",
             transition: "box-shadow 0.2s",
           }}
