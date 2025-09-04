@@ -4,13 +4,16 @@ import { useRouter } from 'next/navigation';
 import styles from '../styles/ProjectsCard.module.css';
 interface ProjectsCardProps {
   className?: string;
-}
+};
+import projects from "../projects/projectsData";
+
 export default function ProjectsCard({ className }: ProjectsCardProps) {
-    const router = useRouter();
+  const router = useRouter();
 
   return (
     <div className={className}>
       <div className={styles.card}>
+        {/* Header */}
         <div className={styles.header}>
           <div className={styles.icon}>
             <i className="fa fa-folder" aria-hidden="true"></i>
@@ -24,40 +27,49 @@ export default function ProjectsCard({ className }: ProjectsCardProps) {
           </div>
         </div>
 
+        {/* Projects List */}
         <div className={styles.projects}>
-          {/* Project 1 */}
-          <div className={styles.projectItem}>
-            <img src="/project-1.webp" alt="CryptoVault" className={styles.thumbnail} />
-            <div className={styles.details}>
-              <h4>CryptoVault – Enterprise-Grade Encryption <i className="fa fa-star"></i></h4>
-              <p>A secure, client-side encryption and decryption tool.</p>
-              <div className={styles.meta}>
-                <span className={styles.tag}>other</span>
-                <span className={styles.year}><i className="fa fa-calendar"></i> 2025</span>
+          {projects.slice(0, 2).map((project) => (
+            <div
+              key={project.id}
+              className={styles.projectItem}
+              onClick={() => router.push(`/projects/${project.slug}`)}
+              style={{ cursor: "pointer" }}
+            >
+              <img
+                src={`/${project.image}`}
+                alt={project.title}
+                className={styles.thumbnail}
+              />
+              <div className={styles.details}>
+                <h4>
+                  {project.title}{" "}
+                  {project.featured && <i className="fa fa-star"></i>}
+                </h4>
+                <p>{project.desc}</p>
+                <div className={styles.meta}>
+                  <span className={styles.tag}>{project.type}</span>
+                  <span className={styles.year}>
+                    <i className="fa fa-calendar"></i>{" "}
+                    {project.date.replace("Aug ", "")}
+                  </span>
+                </div>
               </div>
             </div>
-          </div>
-
-          {/* Project 2 */}
-          <div className={styles.projectItem}>
-            <img src="/project-2.webp" alt="Form Builder" className={styles.thumbnail} />
-            <div className={styles.details}>
-              <h4>Low Code Form Builder <i className="fa fa-star"></i></h4>
-              <p>Designed and built a modular low-code form builder.</p>
-              <div className={styles.meta}>
-                <span className={styles.tag}>web app</span>
-                <span className={styles.year}><i className="fa fa-calendar"></i> 2025</span>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
 
+        {/* Footer Button */}
         <div>
-          <button className={styles.button}>
-            View All Projects <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
+          <button
+            className={styles.button}
+            onClick={() => router.push("/projects")}
+          >
+            View All Projects{" "}
+            <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
           </button>
         </div>
       </div>
-      </div>
+    </div>
   );
 }

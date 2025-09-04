@@ -23,7 +23,7 @@
   align-items: center;
   gap: 10px;
   margin-bottom: 20px;
-  border: 1px solid #ddd;
+  border: 1px solid #1d1d1d;
   padding: 8px 12px;
   border-radius: 8px;
   
@@ -37,7 +37,9 @@
   background-color: transparent;
   color: white;
 }
-
+.searchBar:focus {
+  border: 1px solid #4e4d4d;
+}
 .icon {
   color: #666;
   cursor: pointer;
@@ -161,8 +163,9 @@
     rgba(29, 160, 242, 0.10) 54%,
     rgba(33, 137, 222, 0.10) 100%
   );
-  color: #1565c0; /* Dark blue text */
-  border:1px solid #1565c03a;
+  color: #ffffff; /* Dark blue text */
+  border:1px solid #fffffff0;
+  border-radius: 3px;
 }
 
 .inprogress {
@@ -281,7 +284,13 @@
   color: #787777;
   margin-bottom: 10px;
 }
-
+.desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;   /* maximum 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .tags {
   display: flex;
   flex-wrap: wrap;

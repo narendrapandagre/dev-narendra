@@ -14,6 +14,16 @@
   align-items: center;
   justify-content: space-between;
 }
+.location {
+  color: #aaa;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.location .locationIcon {
+  color: #4da3ff;
+}
 .avatar {
   border-radius: 50%;
   margin-bottom: 10px;
@@ -32,8 +42,15 @@
   margin: 5px 0;
   color: #aaa;
 }
-
+.links div {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+}
 .links a {
+  color: #ffffff;
+}
+.links a:hover {
   color: #4da3ff;
 }
 .ptext {
@@ -62,6 +79,32 @@
     float: left;
     margin: 5px;
 }
+.ptext {
+  /* font-size: 24px; */
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.slideText {
+  display: inline-block;
+  margin-left: 8px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  position: relative;
+}
+
+/* Slide out (down) */
+.slideOut {
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+/* Slide in (from top) */
+.slideIn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (max-width: 768px) {
   .card {
     padding: 10px;
