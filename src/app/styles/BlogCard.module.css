@@ -70,7 +70,7 @@
   border: 1px solid #333;
 }
 
-.post:hover {
+.postItem:hover {
   background: #222;
   cursor: pointer;
 }
@@ -97,7 +97,13 @@
   margin: 0 0 6px;
   color: #aaa;
 }
-
+.details p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;   /* maximum 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .meta {
   display: flex;
   justify-content: space-between;

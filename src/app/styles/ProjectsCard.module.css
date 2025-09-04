@@ -140,3 +140,10 @@
     text-align: center;
     border-radius: 5px;
 }
+.details p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;   /* maximum 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

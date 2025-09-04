@@ -29,16 +29,16 @@ export default function ConnectCard({ className }: ConnectCardProps) {
         
         <div className={styles.icons}>
           <p>Follow & Connect</p>
-          <a href="https://linkedin.com" target="_blank">
+          <a href="https://linkedin.com/in/narendra-pandagre" target="_blank">
             <i className={`fab fa-linkedin ${styles.icon}`} />
           </a>
-          <a href="https://github.com" target="_blank">
+          <a href="https://github.com/narendrapandagre" target="_blank">
             <i className={`fab fa-github ${styles.icon}`} />
           </a>
           <a href="https://twitter.com" target="_blank">
             <i className={`fab fa-twitter ${styles.icon}`} />
           </a>
-          <a href="mailto:example@email.com">
+          <a href="mailto:narendrapanda22@email.com">
             <i className={`fas fa-envelope ${styles.icon}`} />
           </a>
         </div>
