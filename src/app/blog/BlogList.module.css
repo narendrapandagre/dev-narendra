@@ -1,0 +1,286 @@
+/* Container */
+.container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 32px;
+  background: #030303;
+  color: #f5f5f5;
+}
+.back {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #aaa;
+  text-decoration: none;
+}
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.search {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #171717;
+  border-radius: 8px;
+  background: #000000;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+}
+
+.search::placeholder {
+  color: #888;
+}
+
+/* Categories */
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 32px 0;
+  background-color: rgb(16, 16, 16);
+  padding: 5px;
+  justify-content: space-between;
+  border-radius: 4px;
+}
+
+.category {
+  padding: 12px 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  /* border: 1px solid #222; */
+  transition: background 0.3s ease;
+  flex-direction: column;
+  align-items: center;
+}
+
+.category:hover {
+  background: #0a0a0a;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.count {
+  color: #888;
+  font-size: 0.85rem;
+  background-color: #333;
+  padding: 5px;
+  border-radius: 6px;
+  width: 30px;
+  text-align: center;
+  align-items: center;
+}
+
+/* Blog Section */
+.subheading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 16px 0;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  background: #090909;
+  border: 1px solid #222;
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.4);
+}
+
+.tag {
+  display: inline-block;
+  background: #01093dab;
+  color: #0163cc;
+  border: 1px solid #0163cc;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.blogTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.blogTitle a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.blogTitle a:hover {
+  color: #0163cc;
+}
+
+.desc {
+  font-size: 1rem;
+  color: #aaa;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.meta {
+  display: flex;
+  gap: 16px;
+  font-size: 0.9rem;
+  color: #888;
+  position: relative;
+}
+.meta span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.meta .rightIcon {
+  position: absolute;
+  right: 0;
+  color: #888;
+}
+/* Existing CSS same rahega - bas yeh add karo */
+
+.active {
+  background: #000000;
+  color: #fff;
+  border-color: #171717;
+}
+
+.noPosts {
+  text-align: center;
+  color: #888;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 24px; /* spacing between cards */
+  margin-top: 24px;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* tablet → 2 columns */
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr; /* mobile → 1 column */
+  }
+}
+/* --- tumhara existing CSS upar jaisa ka taisa rahega --- */
+
+/* Responsive breakpoints */
+@media (max-width: 1200px) {
+  .container {
+    width: 85%;
+    padding: 24px;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* Tablet → 2 cards */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .categories {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+
+  .category {
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    padding: 10px 14px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr; /* Mobile → 1 card */
+  }
+
+  .desc {
+    font-size: 0.9rem;
+  }
+
+  .meta {
+    font-size: 0.8rem;
+    flex-direction: column;
+    gap: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .search {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .blogTitle {
+    font-size: 1.1rem;
+  }
+
+  .desc {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  .categories {
+    padding: 8px;
+  }
+
+  .category {
+    font-size: 0.8rem;
+    padding: 8px 12px;
+  }
+
+  .count {
+    font-size: 0.75rem;
+    padding: 2px 6px;
+  }
+}

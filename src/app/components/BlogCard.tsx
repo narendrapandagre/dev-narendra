@@ -1,9 +1,17 @@
-// src/components/BlogCard.tsx
-import styles from '../styles/BlogCard.module.css';
+"use client";
+
+import Link from "next/link";
+import blogs from "../blog/blogs"; // yeh aapke blogs.ts ka path hai
+import styles from "../styles/BlogCard.module.css";
+
 interface BlogCardProps {
   className?: string;
 }
+
 export default function BlogCard({ className }: BlogCardProps) {
+  // sirf latest 2 posts
+  const latestPosts = blogs.slice(0, 2);
+
   return (
     <div className={className}>
       <div className={styles.card}>
@@ -18,60 +26,46 @@ export default function BlogCard({ className }: BlogCardProps) {
               <p>Latest thoughts</p>
             </div>
           </div>
-          <div className={styles.viewAllBtn}>
+          <Link href="/blog" className={styles.viewAllBtn}>
             <i className="fa fa-chevron-right" aria-hidden="true"></i>
-          </div>
+          </Link>
         </div>
 
-      <div className={styles.post}>
-          {/* Latest Post */}
-          <div className={styles.postItem}>
-            <div className={styles.postIcon}>
-              <i className="fa fa-file-alt" aria-hidden="true"></i>
-            </div>
-            <div className={styles.details}>
-              <h4>Why SOLID Matters – From Fundamentals to Real-World</h4>
-              <p>
-                Learn the SOLID principles not as rules to memorize but from first principles—
-                understand the why behind clean code.
-              </p>
-              <div className={styles.meta}>
-                <span className={styles.tag}>development</span>
-                <div className={styles.extra}>
-                  <span><i className="fa fa-clock"></i> 4m</span>
-                  <span><i className="fa fa-calendar"></i> Aug 1</span>
+        {/* Latest Posts */}
+        <div className={styles.post}>
+          {latestPosts.map((post) => (
+            <div key={post.id} className={styles.postItem}>
+              <div className={styles.postIcon}>
+                <i className="fa fa-file-alt" aria-hidden="true"></i>
+              </div>
+              <div className={styles.details}>
+                <Link href={`/blog/${post.slug}`}>
+                  <h4>{post.title}</h4>
+                </Link>
+                <p>{post.desc}</p>
+                <div className={styles.meta}>
+                  <span className={styles.tag}>{post.tags[0]}</span>
+                  <div className={styles.extra}>
+                    <span>
+                      <i className="fa fa-clock"></i> 4m
+                    </span>
+                    <span>
+                      <i className="fa fa-calendar"></i> {post.date}
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-
-          {/* Latest Post */}
-          <div className={styles.postItem}>
-            <div className={styles.postIcon}>
-              <i className="fa fa-file-alt" aria-hidden="true"></i>
-            </div>
-            <div className={styles.details}>
-              <h4>Why SOLID Matters – From Fundamentals to Real-World</h4>
-              <p>
-                Learn the SOLID principles not as rules to memorize but from first principles—
-                understand the why behind clean code.
-              </p>
-              <div className={styles.meta}>
-                <span className={styles.tag}>development</span>
-                <div className={styles.extra}>
-                  <span><i className="fa fa-clock"></i> 4m</span>
-                  <span><i className="fa fa-calendar"></i> Aug 1</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
 
         {/* Footer Button */}
         <div className={styles.footer}>
-          <button className={styles.button}>
-            Read All Posts <i className="fa fa-arrow-right"></i>
-          </button>
+          <Link href="/blog">
+            <button className={styles.button}>
+              Read All Posts <i className="fa fa-arrow-right"></i>
+            </button>
+          </Link>
         </div>
       </div>
     </div>
