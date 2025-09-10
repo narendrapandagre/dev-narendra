@@ -9,8 +9,16 @@
   text-decoration: none;
   display: inline-block;
   margin-bottom: 1rem;
+  padding: 0.6rem 0.6rem;
+  border-radius: 5px;
 }
-
+.backLink:hover {
+  background-color: #333;
+  color: #fff;
+}
+.backLink:hover a {
+  color: #fff;
+}
 .title {
   font-size: 5rem;
   font-weight: bold;

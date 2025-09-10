@@ -1,7 +1,10 @@
+import { url } from "inspector";
+
 const projects = [
   {
     id: 1,
     slug: "xpower-platform",
+    url: "https://www.xcellen.com/",
     title: "Xpower Platform – Sales Force Effectiveness",
     desc: "A sales force effectiveness platform for the life sciences industry with modules for customer targeting, territory management, and sales planning.",
     type: "Web Application",
@@ -48,6 +51,7 @@ const projects = [
   {
     id: 2,
     slug: "igis-map",
+    url: "https://www.igismap.com/",
     title: "IGIS Map – Interactive Web Maps",
     desc: "Tool for building interactive web maps with advanced visualization and analysis features.",
     type: "Website",
@@ -90,6 +94,7 @@ const projects = [
   {
     id: 3,
     slug: "engineer-philosophy",
+    url: "https://www.engineerphilosophy.com/",
     title: "Engineer Philosophy Web Application",
     desc: "Dynamic responsive websites built from PSD to Angular components.",
     type: "Website",
@@ -128,6 +133,7 @@ const projects = [
   {
     id: 4,
     slug: "ssv-technologies",
+    url: "https://ssvtechnologies.in/",
     title: "SSV Technologies – Client Websites",
     desc: "Multiple responsive client websites delivered with HTML, CSS, and Bootstrap.",
     type: "Website",
@@ -166,6 +172,7 @@ const projects = [
   {
     id: 5,
     slug: "freelance-pisarv",
+    url: "http://pisarv.com/",
     title: "Freelance – PISARV Websites",
     desc: "Freelance projects delivering responsive websites for PISARV and other clients.",
     type: "Website",
@@ -204,6 +211,7 @@ const projects = [
   {
     id: 6,
     slug: "web-portfolio",
+    url: "https://dev-narendra.vercel.app/",
     title: "Personal Web Portfolio",
     desc: "My personal portfolio website built with Next.js and Tailwind CSS to showcase my skills and projects.",
     type: "website",

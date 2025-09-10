@@ -34,8 +34,16 @@
   margin-bottom: 1rem;
   color: #aaa;
   text-decoration: none;
+  padding: 0.5rem 0.6rem;
+  border-radius: 5px;
 }
-
+.back:hover {
+  background-color: #333;
+  color: #fff;
+}
+.back:hover a {
+  color: #fff;
+}
 .titleBlock h1 {
   font-size: 2rem;
   font-weight: bold;

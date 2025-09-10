@@ -65,7 +65,6 @@ a {
     "sidebar connect";
   gap: 20px;
 }
-
 /* Assign each item */
 .sidebar { grid-area: sidebar; 
     background-color: #111;

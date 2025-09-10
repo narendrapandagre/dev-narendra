@@ -79,7 +79,6 @@
 .projectCard p {
   color: #444;
 }
-
 /* Responsive */
 @media (max-width: 768px) {
   .hero h1 {

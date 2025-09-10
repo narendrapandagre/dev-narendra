@@ -16,10 +16,17 @@ export default function ConnectCard({ className }: ConnectCardProps) {
         <div className={styles.content}>
           <h3>Let's Connect</h3>
           <p>Let's work together</p>
-          <button className={styles.hire}>
+          <button
+            className={styles.hire}
+            onClick={() => {
+              window.location.href =
+                "mailto:narendrapanda22@gmail.com?subject=Project Inquiry&body=Hi Narendra,";
+            }}
+          >
             <i className={`fas fa-briefcase ${styles.icon}`} />
             Hire Me
           </button>
+
 
           <button className={styles.contact} onClick={() => setShowModal(true)}>
             <i className={`far fa-envelope ${styles.icon}`} />

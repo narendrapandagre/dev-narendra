@@ -1,3 +1,4 @@
+"use client";
 import styles from "./ProjectDetails.module.css";
 import projectsData from "../projectsData";
 import { Calendar, EyeIcon, GiftIcon, File, Code,Zap, Sparkles, Target,Trophy, TimerIcon , Lightbulb, CircleCheck } from "lucide-react";
@@ -34,8 +35,8 @@ export default function ProjectDetails({ params }: { params: { slug: string } })
             <h1 className={styles.title}>{project.title}</h1>
             <p className={styles.desc}>{project.desc}</p>
             <div className={styles.btnDiv}>
-              {/* onClick={() => window.open(`https://${project.slug}.narendran.dev`, "_blank")} */}
-              <button className={`${styles.btn} ${styles.primary}`}><EyeIcon size={18}/> View Live Project</button>
+              {/* onClick={() => window.open(`${project.url}`, "_blank")} */}
+              <button onClick={() => window.open(`${project.url}`, "_blank")} className={`${styles.btn} ${styles.primary}`}><EyeIcon size={18}/> View Live Project</button>
               <button className={`${styles.btn} ${styles.secondary}`}><GiftIcon size={18}/> View Source Code</button>
             </div>
           </div>
