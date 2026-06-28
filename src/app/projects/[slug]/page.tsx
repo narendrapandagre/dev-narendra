@@ -37,7 +37,7 @@ export default function ProjectDetails({ params }: { params: { slug: string } })
             <div className={styles.btnDiv}>
               {/* onClick={() => window.open(`${project.url}`, "_blank")} */}
               <button onClick={() => window.open(`${project.url}`, "_blank")} className={`${styles.btn} ${styles.primary}`}><EyeIcon size={18}/> View Live Project</button>
-              <button className={`${styles.btn} ${styles.secondary}`}><GiftIcon size={18}/> View Source Code</button>
+              {/* <button className={`${styles.btn} ${styles.secondary}`}><GiftIcon size={18}/> View Source Code</button> */}
             </div>
           </div>
         </div>

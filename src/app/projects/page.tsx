@@ -126,12 +126,14 @@ export default function ProjectsShowcase() {
                   View Details <ExternalLink size={14} />
                 </button>
                 <div className={styles.footerIcons}>
-                  <button className={styles.iconBtn}>
+                  <button onClick={() => window.open(proj.url, "_blank")} className={styles.iconBtn}>
                     <ExternalLink size={14} />
                   </button>
-                  <button className={styles.iconBtn}>
-                    <GitBranchIcon size={14} />
-                  </button>
+                  {proj.giturl?.trim() && (
+                    <button onClick={() => window.open(proj.giturl, "_blank")} className={styles.iconBtn}>
+                      <GitBranchIcon size={14} />
+                    </button>
+                  )}
                 </div>
               </div>
             </div>

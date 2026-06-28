@@ -212,6 +212,7 @@ const projects = [
     id: 6,
     slug: "web-portfolio",
     url: "https://dev-narendra.vercel.app/",
+    giturl: "https://github.com/narendrapandagre/dev-narendra",
     title: "Personal Web Portfolio",
     desc: "My personal portfolio website built with Next.js and Tailwind CSS to showcase my skills and projects.",
     type: "website",

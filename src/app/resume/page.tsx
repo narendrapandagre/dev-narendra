@@ -556,7 +556,7 @@ Angular 8, Angular 14, HTML, CSS, JavaScript, Bootstrap 4.6, and Angular Materia
 
         {/* Footer */}
         <footer className={styles.footer}>
-          <p>This resume was generated on August 16, 2025 · Last updated August 18, 2025</p>
+          <p>This resume was generated on June 29, 2026 · Last updated June 29, 2026</p>
         </footer>
       </div>
     </div>
