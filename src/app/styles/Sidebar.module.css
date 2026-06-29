@@ -53,3 +53,12 @@
     width: 100% !important;
   }
 }
+.skill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.skillIcon {
+  flex-shrink: 0;
+}

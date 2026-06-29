@@ -42,10 +42,10 @@ export default function ConnectCard({ className }: ConnectCardProps) {
           <a href="https://github.com/narendrapandagre" target="_blank">
             <i className={`fab fa-github ${styles.icon}`} />
           </a>
-          <a href="https://twitter.com" target="_blank">
+          {/* <a href="https://twitter.com" target="_blank">
             <i className={`fab fa-twitter ${styles.icon}`} />
-          </a>
-          <a href="mailto:narendrapanda22@email.com">
+          </a> */}
+          <a href="mailto:narendrapanda22@gmail.com">
             <i className={`fas fa-envelope ${styles.icon}`} />
           </a>
         </div>

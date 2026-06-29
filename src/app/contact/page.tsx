@@ -66,7 +66,7 @@ export default function Contact() {
             </div>
             <div>
               <p><strong>Phone:</strong> </p>
-              <p>+91 7011769467</p>
+              <p>+91 9691293919</p>
             </div>
           </div>
         <div className={styles.infoBox}>
@@ -75,7 +75,7 @@ export default function Contact() {
              </div>
             <div>
             <p><strong>Email:</strong></p>
-             <p> narendrapandagre22@gmail.com</p>
+             <p> narendrapanda22@gmail.com</p>
             </div>
         </div>
         <div className={styles.infoBox}>

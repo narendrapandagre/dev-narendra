@@ -91,15 +91,17 @@
   margin-left: 8px;
   transition: transform 0.5s ease, opacity 0.5s ease;
   position: relative;
+  color: #4da3ff;
+  font-weight: 600;
 }
 
-/* Slide out (down) */
+/* Slide out (exit animation) */
 .slideOut {
   opacity: 0;
-  transform: translateY(100%);
+  transform: translateY(-10px);
 }
 
-/* Slide in (from top) */
+/* Slide in (visible/resting state) */
 .slideIn {
   opacity: 1;
   transform: translateY(0);
@@ -126,4 +128,60 @@
   .taglineContainer .tagline {
     text-align: center;
   }
+}
+.avatar {
+  filter: brightness(0.95) contrast(1.05);
+  object-fit: cover;
+  object-position: center top; /* face ko upar shift karne ke liye */
+}
+.statsRow {
+  display: flex;
+  gap: 32px;
+  margin-top: 16px;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.statValue {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff; /* apne theme ke accent color se replace kar sakte ho */
+}
+
+.statLabel {
+  font-size: 13px;
+  color: #9ca3af; /* muted gray, apne theme ke hisaab se adjust karo */
+}
+.statItem:not(:last-child) {
+     border-right: 1px solid rgba(255,255,255,0.1);
+     padding-right: 32px;
+   }
+.status {
+  display: flex;
+  align-items: center;
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.status:hover {
+  color: #ffffff;
+}
+
+.status span {
+  background-color: #1ed406;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  margin-right: 8px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(30, 212, 6, 0.5); }
+  70% { box-shadow: 0 0 0 6px rgba(30, 212, 6, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(30, 212, 6, 0); }
 }
